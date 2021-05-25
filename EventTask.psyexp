@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2021.1.4">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="list"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="list"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="EventTask" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="debug" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="experiment">
+      <TextComponent name="trial_instructions">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="trial_instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0,-300)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="C = “YES”             N = “NO”" valType="str"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'c','n'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$file" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((((experiment_trials.thisTrialN + 1) % 128) === 0)) {&amp;#10;    file = &quot;breakfile.jpg&quot;;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if (experiment_trials.thisTrialN+1)%128==0:&amp;#10;    file='breakfile.jpg'" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="practice">
+      <TextComponent name="trial_instructions_practice">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="num"/>
+        <Param name="name" updates="None" val="trial_instructions_practice" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0,-300)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="C = “YES”             N = “NO”" valType="str"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_practice">
+        <Param name="allowedKeys" updates="constant" val="'c','n'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_practice" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="image_practice">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$file" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="image_practice" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="task_instructions">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="task_instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Welcome to the Event Task!&amp;#10;&amp;#10;You will see a series of pictures. For each picture, you will answer the question: &amp;#10;Is this something that might normally happen?&amp;#10;&amp;#10;Use your keyboard to respond. &amp;#10;Hit ‘C’ if the answer is YES.&amp;#10;Hit ‘N’ if the answer is NO.&amp;#10;&amp;#10;We will start with a series of practice items. &amp;#10;&amp;#10;Press the space bar when you are ready." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="continue2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="continue2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="standardizingRTs">
+      <TextComponent name="std_instructions">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="std_instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="For the next task, you will press:&amp;#10;“C” for YES&amp;#10;“N” for NO&amp;#10;&amp;#10;We will practice this a few times before continuing.&amp;#10;&amp;#10;Press the space bar when you are ready." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="continue1">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="continue1" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="stdRT_loop">
+      <KeyboardComponent name="key_resp_stdRT">
+        <Param name="allowedKeys" updates="constant" val="'c','n'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_stdRT" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$stimulus" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="header_practice">
+      <TextComponent name="practice_block">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="practice_block" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Practice Block" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="continue3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="continue3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="header_experiment">
+      <TextComponent name="experiment_block">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="experiment_block" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Experiment Block" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="continue4">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="continue4" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="end">
+      <TextComponent name="end_text">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="end_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="This is the end of the Event Task.&amp;#10;&amp;#10;Thank you!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="continue5">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="continue5" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="standardizingRTs"/>
+    <LoopInitiator loopType="TrialHandler" name="stdRT_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('stimulus', &quot;Press the 'yes' key.&quot;), ('corrAns', 'c')]), OrderedDict([('stimulus', &quot;Press the 'no' key.&quot;), ('corrAns', 'n')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="standardizingRTs.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="5" valType="num"/>
+      <Param name="name" updates="None" val="stdRT_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="stdRT_loop"/>
+    <LoopTerminator name="stdRT_trials"/>
+    <Routine name="instructions"/>
+    <Routine name="header_practice"/>
+    <LoopInitiator loopType="TrialHandler" name="practice_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('file', 'practice_images/balancing on umbrella.jpg'), ('stimulus', 'balancing on umbrella.jpg'), ('condition', 'implausible'), ('block', 'practice'), ('corrAns', 'n')]), OrderedDict([('file', 'practice_images/bikini woman gun.jpg'), ('stimulus', 'bikini woman gun.jpg'), ('condition', 'implausible'), ('block', 'practice'), ('corrAns', 'n')]), OrderedDict([('file', 'practice_images/boxer training.jpg'), ('stimulus', 'boxer training.jpg'), ('condition', 'plausible'), ('block', 'practice'), ('corrAns', 'c')]), OrderedDict([('file', 'practice_images/girl and woman_patio.jpg'), ('stimulus', 'girl and woman_patio.jpg'), ('condition', 'plausible'), ('block', 'practice'), ('corrAns', 'c')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="practice.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="practice_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="practice"/>
+    <LoopTerminator name="practice_trials"/>
+    <Routine name="header_experiment"/>
+    <LoopInitiator loopType="TrialHandler" name="experiment_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('file', 'images/man_office war sandbags.jpg'), ('stimulus', 'man_office war sandbags.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/USB plugged into hair.jpg'), ('stimulus', 'USB plugged into hair.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/salting turf.jpg'), ('stimulus', 'salting turf.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_home office.jpg'), ('stimulus', 'man_home office.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office presentation in desert.jpg'), ('stimulus', 'office presentation in desert.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/person walking on car.jpg'), ('stimulus', 'person walking on car.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/pope drilling.jpg'), ('stimulus', 'pope drilling.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman singing into sunflower.jpg'), ('stimulus', 'woman singing into sunflower.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_golfing.jpg'), ('stimulus', 'man_golfing.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office worker_ballet in desert.jpg'), ('stimulus', 'office worker_ballet in desert.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/sawing loaf of bread.jpg'), ('stimulus', 'sawing loaf of bread.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman sewing hair.jpg'), ('stimulus', 'woman sewing hair.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/boxer training.jpg'), ('stimulus', 'boxer training.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/using pump to inflate foot.jpg'), ('stimulus', 'using pump to inflate foot.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/girl_ballet barre.jpg'), ('stimulus', 'girl_ballet barre.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office woman_head in bag.jpg'), ('stimulus', 'office woman_head in bag.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_jumping into water.jpg'), ('stimulus', 'man_jumping into water.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_reading w multiple glasses.jpg'), ('stimulus', 'woman_reading w multiple glasses.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_office couch.jpg'), ('stimulus', 'man_office couch.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/watering can on feet.jpg'), ('stimulus', 'watering can on feet.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman drinking car engine oil.jpg'), ('stimulus', 'woman drinking car engine oil.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/girl_spaghetti.jpg'), ('stimulus', 'girl_spaghetti.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_snowkiting.jpg'), ('stimulus', 'man_snowkiting.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman dancing w skeleton.jpg'), ('stimulus', 'woman dancing w skeleton.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_wind instrument in water.jpg'), ('stimulus', 'man_wind instrument in water.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_mtn biking.jpg'), ('stimulus', 'man_mtn biking.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/girl_jumping broken bridge.jpg'), ('stimulus', 'girl_jumping broken bridge.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/boy_walking dog.jpg'), ('stimulus', 'boy_walking dog.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/windsurfing on tubes.jpg'), ('stimulus', 'windsurfing on tubes.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_office file cabinets.jpg'), ('stimulus', 'man_office file cabinets.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/swimming in ice on cell phone.jpg'), ('stimulus', 'swimming in ice on cell phone.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/chefs_menu.jpg'), ('stimulus', 'chefs_menu.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/boy and man_raking leaves.jpg'), ('stimulus', 'boy and man_raking leaves.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_crossing urban street.jpg'), ('stimulus', 'man_crossing urban street.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office woman_plastic wrap on face and hands.jpg'), ('stimulus', 'office woman_plastic wrap on face and hands.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/lifeguard at beach.jpg'), ('stimulus', 'lifeguard at beach.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_hotel bed.jpg'), ('stimulus', 'man_hotel bed.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_drinking water.jpg'), ('stimulus', 'man_drinking water.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_office cabinet in water.jpg'), ('stimulus', 'man_office cabinet in water.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/kid_fishing.jpg'), ('stimulus', 'kid_fishing.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/ping pong at breakfast table.jpg'), ('stimulus', 'ping pong at breakfast table.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_eating pizza.jpg'), ('stimulus', 'man_eating pizza.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/construction worker_on site.jpg'), ('stimulus', 'construction worker_on site.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man jumping over briefcase.jpg'), ('stimulus', 'business man jumping over briefcase.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/hospital patient.jpg'), ('stimulus', 'hospital patient.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office people with drums.jpg'), ('stimulus', 'office people with drums.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_making small boats.jpg'), ('stimulus', 'man_making small boats.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/punching milk.jpg'), ('stimulus', 'punching milk.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man at bar.jpg'), ('stimulus', 'man at bar.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/kneading dough.jpg'), ('stimulus', 'kneading dough.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_winter running outside.jpg'), ('stimulus', 'man_winter running outside.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman in desert with satellite.jpg'), ('stimulus', 'woman in desert with satellite.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/robot vacuuming.jpg'), ('stimulus', 'robot vacuuming.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/office men_hula hoop.jpg'), ('stimulus', 'office men_hula hoop.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/meeting with naked woman.jpg'), ('stimulus', 'meeting with naked woman.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_playing violin under water.jpg'), ('stimulus', 'man_playing violin under water.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_mask in office.jpg'), ('stimulus', 'man_mask in office.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man and woman_toasting champagne.jpg'), ('stimulus', 'man and woman_toasting champagne.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/robot on couch_maid cleaning floor.jpg'), ('stimulus', 'robot on couch_maid cleaning floor.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/office desk in forest.jpg'), ('stimulus', 'office desk in forest.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_courthouse steps.jpg'), ('stimulus', 'man_courthouse steps.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_net catching papers.jpg'), ('stimulus', 'woman_net catching papers.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/girl_playing flute.jpg'), ('stimulus', 'girl_playing flute.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_face in pie.jpg'), ('stimulus', 'woman_face in pie.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_climbing on cabinets.jpg'), ('stimulus', 'woman_climbing on cabinets.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_high jump.jpg'), ('stimulus', 'man_high jump.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_football practice.jpg'), ('stimulus', 'man_football practice.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_praying.jpg'), ('stimulus', 'man_praying.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_exercise gym.jpg'), ('stimulus', 'man_exercise gym.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_skateboard in city.jpg'), ('stimulus', 'man_skateboard in city.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_hurdle.jpg'), ('stimulus', 'man_hurdle.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/scuba diver on mtn.jpg'), ('stimulus', 'scuba diver on mtn.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/men standing on doors.jpg'), ('stimulus', 'men standing on doors.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_running on bleachers.jpg'), ('stimulus', 'man_running on bleachers.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/eating strawberry snack roll.jpg'), ('stimulus', 'eating strawberry snack roll.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_cracking coconut island.jpg'), ('stimulus', 'man_cracking coconut island.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_roller skating.jpg'), ('stimulus', 'man_roller skating.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office woman path of chips.jpg'), ('stimulus', 'office woman path of chips.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/pregnant woman forest.jpg'), ('stimulus', 'pregnant woman forest.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_sawing log.jpg'), ('stimulus', 'man_sawing log.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/cracking nut.jpg'), ('stimulus', 'cracking nut.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/girl_hugging dog.jpg'), ('stimulus', 'girl_hugging dog.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/maid_sweeping closet.jpg'), ('stimulus', 'maid_sweeping closet.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_playing violin.jpg'), ('stimulus', 'man_playing violin.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_inflating air mattress.jpg'), ('stimulus', 'man_inflating air mattress.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman marrying robot.jpg'), ('stimulus', 'woman marrying robot.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_golfing mtn.jpg'), ('stimulus', 'man_golfing mtn.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/boy_holding dog.jpg'), ('stimulus', 'boy_holding dog.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_making pottery.jpg'), ('stimulus', 'man_making pottery.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/boy_kite.jpg'), ('stimulus', 'boy_kite.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man and woman_dancing on beach.jpg'), ('stimulus', 'man and woman_dancing on beach.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_watering outdoor plant indoors.jpg'), ('stimulus', 'woman_watering outdoor plant indoors.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_fishing.jpg'), ('stimulus', 'man_fishing.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_watering.jpg'), ('stimulus', 'woman_watering.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/romantic dinner_table in water.jpg'), ('stimulus', 'romantic dinner_table in water.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/construction work_hammering.jpg'), ('stimulus', 'construction work_hammering.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman golfing off mans face.jpg'), ('stimulus', 'woman golfing off mans face.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/underwater jump rope.jpg'), ('stimulus', 'underwater jump rope.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/standing behind painting on wall.jpg'), ('stimulus', 'standing behind painting on wall.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/office men climbing lightpole.jpg'), ('stimulus', 'office men climbing lightpole.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/stethoscope to egg.jpg'), ('stimulus', 'stethoscope to egg.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_ball and chain in desert.jpg'), ('stimulus', 'woman_ball and chain in desert.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/women walking prehistoric insects.jpg'), ('stimulus', 'women walking prehistoric insects.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/doubles figure skating.jpg'), ('stimulus', 'doubles figure skating.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/band in the street.jpg'), ('stimulus', 'band in the street.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/doubles tennis.jpg'), ('stimulus', 'doubles tennis.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_hanging from door reading.jpg'), ('stimulus', 'woman_hanging from door reading.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/kicking soccer ball.jpg'), ('stimulus', 'kicking soccer ball.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/track meet in slippers.jpg'), ('stimulus', 'track meet in slippers.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/kids_presents.jpg'), ('stimulus', 'kids_presents.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_fishing boat.jpg'), ('stimulus', 'man_fishing boat.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_bikini grocery store.jpg'), ('stimulus', 'woman_bikini grocery store.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/soup can phone_man on iceberg.jpg'), ('stimulus', 'soup can phone_man on iceberg.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_playing chess.jpg'), ('stimulus', 'man_playing chess.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man and woman_jumping into water.jpg'), ('stimulus', 'man and woman_jumping into water.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/office waiting area_woman in pajamas.jpg'), ('stimulus', 'office waiting area_woman in pajamas.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/office men boxing.jpg'), ('stimulus', 'office men boxing.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_pills with fork.jpg'), ('stimulus', 'woman_pills with fork.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_playing guitar.jpg'), ('stimulus', 'man_playing guitar.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_painting interior walls.jpg'), ('stimulus', 'man_painting interior walls.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_rock climbing.jpg'), ('stimulus', 'man_rock climbing.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/track meet_office building.jpg'), ('stimulus', 'track meet_office building.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/people standing alone with clocks.jpg'), ('stimulus', 'people standing alone with clocks.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_kitchen frisbee.jpg'), ('stimulus', 'woman_kitchen frisbee.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/sports man hitting pink puff.jpg'), ('stimulus', 'sports man hitting pink puff.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man and woman_dinner table.jpg'), ('stimulus', 'man and woman_dinner table.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_kicking garment bag.jpg'), ('stimulus', 'woman_kicking garment bag.jpg'), ('condition', 'Implausible'), ('block', 1), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_BMX bike.jpg'), ('stimulus', 'man_BMX bike.jpg'), ('condition', 'Plausible'), ('block', 1), ('corrAns', 'c')]), OrderedDict([('file', 'images/man fishing in road puddle.jpg'), ('stimulus', 'man fishing in road puddle.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/fish as gun.jpg'), ('stimulus', 'fish as gun.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_mowing lawn.jpg'), ('stimulus', 'woman_mowing lawn.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_bubble bath.jpg'), ('stimulus', 'woman_bubble bath.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_pregnant at sink.jpg'), ('stimulus', 'woman_pregnant at sink.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/lifeguard in empty pool.jpg'), ('stimulus', 'lifeguard in empty pool.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/business man breakdancing outside.jpg'), ('stimulus', 'business man breakdancing outside.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/divers in empty pool.jpg'), ('stimulus', 'divers in empty pool.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_sipping lemonade.jpg'), ('stimulus', 'woman_sipping lemonade.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/British guards_track meet.jpg'), ('stimulus', 'British guards_track meet.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/pointe shoes.jpg'), ('stimulus', 'pointe shoes.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_architecture.jpg'), ('stimulus', 'woman_architecture.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_head in washer.jpg'), ('stimulus', 'man_head in washer.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/cabbage headphones.jpg'), ('stimulus', 'cabbage headphones.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/pen on paper.jpg'), ('stimulus', 'pen on paper.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/breakfast in field.jpg'), ('stimulus', 'breakfast in field.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_shoe shopping.jpg'), ('stimulus', 'woman_shoe shopping.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/scientist_measuring.jpg'), ('stimulus', 'scientist_measuring.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/waiting in terminal.jpg'), ('stimulus', 'waiting in terminal.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_exercise.jpg'), ('stimulus', 'woman_exercise.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_laundry.jpg'), ('stimulus', 'woman_laundry.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business men_kick boxing.jpg'), ('stimulus', 'business men_kick boxing.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/romantic beach dinner.jpg'), ('stimulus', 'romantic beach dinner.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_packing unpacking.jpg'), ('stimulus', 'woman_packing unpacking.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/walking wooden bridge.jpg'), ('stimulus', 'walking wooden bridge.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_dancing ballet.jpg'), ('stimulus', 'woman_dancing ballet.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man breakdancing in kitchen.jpg'), ('stimulus', 'man breakdancing in kitchen.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_shoveling snow.jpg'), ('stimulus', 'woman_shoveling snow.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man long jump over binders.jpg'), ('stimulus', 'business man long jump over binders.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man swinging on street pole.jpg'), ('stimulus', 'man swinging on street pole.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/baby crib in desk drawer.jpg'), ('stimulus', 'baby crib in desk drawer.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man playing instrument w ax.jpg'), ('stimulus', 'man playing instrument w ax.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/boys at ATM.jpg'), ('stimulus', 'boys at ATM.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/driving car through water.jpg'), ('stimulus', 'driving car through water.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/tying shoelace.jpg'), ('stimulus', 'tying shoelace.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/cheese grater on rock.jpg'), ('stimulus', 'cheese grater on rock.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/desert bath tub.jpg'), ('stimulus', 'desert bath tub.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/eating raw fish.jpg'), ('stimulus', 'eating raw fish.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_clothesline.jpg'), ('stimulus', 'woman_clothesline.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/cutting hair w hedge trimmer.jpg'), ('stimulus', 'cutting hair w hedge trimmer.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/two girls_laptop and cell phone.jpg'), ('stimulus', 'two girls_laptop and cell phone.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_driving.jpg'), ('stimulus', 'woman_driving.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/xray consultation.jpg'), ('stimulus', 'xray consultation.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/sick kid_thermometer.jpg'), ('stimulus', 'sick kid_thermometer.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man washing face with stones.jpg'), ('stimulus', 'man washing face with stones.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/boy lifting truck.jpg'), ('stimulus', 'boy lifting truck.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/welder.jpg'), ('stimulus', 'welder.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/outrigger canoe.jpg'), ('stimulus', 'outrigger canoe.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_grapes off vine.jpg'), ('stimulus', 'woman_grapes off vine.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/cutting jewelry on plate.jpg'), ('stimulus', 'cutting jewelry on plate.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man hitting water with baseball bat.jpg'), ('stimulus', 'man hitting water with baseball bat.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man eating shredded paper.jpg'), ('stimulus', 'man eating shredded paper.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/canoe on land.jpg'), ('stimulus', 'canoe on land.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_ironing.jpg'), ('stimulus', 'woman_ironing.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/ballerina mechanic.jpg'), ('stimulus', 'ballerina mechanic.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/track meet.jpg'), ('stimulus', 'track meet.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_surfing.jpg'), ('stimulus', 'woman_surfing.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man balancing books on foot.jpg'), ('stimulus', 'man balancing books on foot.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/boy fishing in train terminal.jpg'), ('stimulus', 'boy fishing in train terminal.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_smiling at phone.jpg'), ('stimulus', 'woman_smiling at phone.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_rock climbing.jpg'), ('stimulus', 'woman_rock climbing.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_throwing frisbee.jpg'), ('stimulus', 'woman_throwing frisbee.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man drinking water with goldfish.jpg'), ('stimulus', 'man drinking water with goldfish.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/smoking cigar.jpg'), ('stimulus', 'smoking cigar.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_spaghetti.jpg'), ('stimulus', 'woman_spaghetti.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man at daytime drive in movie.jpg'), ('stimulus', 'man at daytime drive in movie.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man in bathrobe on bridge.jpg'), ('stimulus', 'man in bathrobe on bridge.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/business man with fish in mouth.jpg'), ('stimulus', 'business man with fish in mouth.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_drilling.jpg'), ('stimulus', 'woman_drilling.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_runner.jpg'), ('stimulus', 'woman_runner.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man with inline skates.jpg'), ('stimulus', 'business man with inline skates.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/office meeting.jpg'), ('stimulus', 'office meeting.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man in doghouse.jpg'), ('stimulus', 'man in doghouse.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_waiting for train.jpg'), ('stimulus', 'man_waiting for train.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_smelling flower.jpg'), ('stimulus', 'woman_smelling flower.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man in cape.jpg'), ('stimulus', 'business man in cape.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/business woman treadmill.jpg'), ('stimulus', 'business woman treadmill.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_water skiing.jpg'), ('stimulus', 'man_water skiing.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man on laptop in middle of road.jpg'), ('stimulus', 'man on laptop in middle of road.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/kicking soccer ball underwater.jpg'), ('stimulus', 'kicking soccer ball underwater.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/lamp on head.jpg'), ('stimulus', 'lamp on head.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man cleaning_boxing match asst.jpg'), ('stimulus', 'man cleaning_boxing match asst.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_eating salad.jpg'), ('stimulus', 'woman_eating salad.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_waxing boat.jpg'), ('stimulus', 'man_waxing boat.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/swimmers starting dive.jpg'), ('stimulus', 'swimmers starting dive.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_headphones.jpg'), ('stimulus', 'woman_headphones.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man skiing down hill.jpg'), ('stimulus', 'business man skiing down hill.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_grocery store.jpg'), ('stimulus', 'woman_grocery store.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/fish speaking into phone.jpg'), ('stimulus', 'fish speaking into phone.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_fingers crossed.jpg'), ('stimulus', 'woman_fingers crossed.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man catching grenade.jpg'), ('stimulus', 'man catching grenade.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man wearing jacket on coat rack.jpg'), ('stimulus', 'man wearing jacket on coat rack.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man sleeping while standing.jpg'), ('stimulus', 'man sleeping while standing.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/girl eating fish head.jpg'), ('stimulus', 'girl eating fish head.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/business man jumping off bridge.jpg'), ('stimulus', 'business man jumping off bridge.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_looking at map.jpg'), ('stimulus', 'woman_looking at map.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man_tennis court.jpg'), ('stimulus', 'man_tennis court.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man skateboarding in bathtub.jpg'), ('stimulus', 'man skateboarding in bathtub.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/boxing in the clouds.jpg'), ('stimulus', 'boxing in the clouds.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man at desk sitting in hole.jpg'), ('stimulus', 'man at desk sitting in hole.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/boy with computer dog.jpg'), ('stimulus', 'boy with computer dog.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_wind instrument on bench.jpg'), ('stimulus', 'man_wind instrument on bench.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_sewing machine.jpg'), ('stimulus', 'woman_sewing machine.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/wedding kiss.jpg'), ('stimulus', 'wedding kiss.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_reading in bed.jpg'), ('stimulus', 'woman_reading in bed.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_running w surfboard.jpg'), ('stimulus', 'woman_running w surfboard.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/boy diving into bucket.jpg'), ('stimulus', 'boy diving into bucket.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/office on phone.jpg'), ('stimulus', 'office on phone.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man praying to soccer ball in tv.jpg'), ('stimulus', 'man praying to soccer ball in tv.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man feeding paper into shredder w mouth.jpg'), ('stimulus', 'man feeding paper into shredder w mouth.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_singing on stage.jpg'), ('stimulus', 'woman_singing on stage.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_high jump.jpg'), ('stimulus', 'woman_high jump.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/business man pole vaulting.jpg'), ('stimulus', 'business man pole vaulting.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man_hammer to crack egg.jpg'), ('stimulus', 'man_hammer to crack egg.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_plucking eyebrow.jpg'), ('stimulus', 'woman_plucking eyebrow.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/doctor_surgery on book.jpg'), ('stimulus', 'doctor_surgery on book.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_washing hands.jpg'), ('stimulus', 'woman_washing hands.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_office.jpg'), ('stimulus', 'woman_office.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_mtn climb.jpg'), ('stimulus', 'woman_mtn climb.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/woman_pulling plant.jpg'), ('stimulus', 'woman_pulling plant.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/man holding up toilet.jpg'), ('stimulus', 'man holding up toilet.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man blowing on strings.jpg'), ('stimulus', 'man blowing on strings.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/man using ax to cut vegetables.jpg'), ('stimulus', 'man using ax to cut vegetables.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/leg coming out of river.jpg'), ('stimulus', 'leg coming out of river.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/woman_ice skating.jpg'), ('stimulus', 'woman_ice skating.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/eating cords w chopsticks.jpg'), ('stimulus', 'eating cords w chopsticks.jpg'), ('condition', 'Implausible'), ('block', 2), ('corrAns', 'n')]), OrderedDict([('file', 'images/two women_hiking.jpg'), ('stimulus', 'two women_hiking.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')]), OrderedDict([('file', 'images/two girls_picture.jpg'), ('stimulus', 'two girls_picture.jpg'), ('condition', 'Plausible'), ('block', 2), ('corrAns', 'c')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="experiment.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="experiment_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="experiment"/>
+    <LoopTerminator name="experiment_trials"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
