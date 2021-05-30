@@ -108,8 +108,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="breaktime=0" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="breaktime = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if ((((experiment_trials.thisTrialN + 1) % 5) === 0)) {&amp;#10;    breaktime = 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if (experiment_trials.thisTrialN+1)%5==0:&amp;#10;    breaktime=1" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((((experiment_trials.thisTrialN + 1) % 129) === 0)) {&amp;#10;    breaktime = 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if (experiment_trials.thisTrialN+1)%129==0:&amp;#10;    breaktime=1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
