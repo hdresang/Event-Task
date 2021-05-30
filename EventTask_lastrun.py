@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Sat May 29 20:57:42 2021
+    on Sat May 29 21:32:21 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -906,7 +906,7 @@ for thisExperiment_trial in experiment_trials:
     key_resp.rt = []
     _key_resp_allKeys = []
     image.setImage(file)
-    if (experiment_trials.thisTrialN+1)%5==0:
+    if (experiment_trials.thisTrialN+1)%129==0:
         breaktime=1
     # keep track of which components have finished
     experimentComponents = [trial_instructions, key_resp, image]
