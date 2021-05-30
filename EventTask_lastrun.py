@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on May 28, 2021, at 16:59
+    on Sat May 29 20:57:42 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Luke\\Documents\\GitHub\\Event-Task\\EventTask_lastrun.py',
+    originPath='/Users/haleydresang/Downloads/Event-Task-main/EventTask_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -101,6 +101,13 @@ text = visual.TextStim(win=win, name='text',
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
+RT_trial_instructions = visual.TextStim(win=win, name='RT_trial_instructions',
+    text='C = “YES”             N = “NO”',
+    font='Open Sans',
+    units='pix', pos=(0, -300), height=30.0, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-2.0);
 
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
@@ -176,9 +183,9 @@ breaktime=0
 
 # Initialize components for Routine "breakblock"
 breakblockClock = core.Clock()
-breakimg = visual.ImageStim(
+breaking = visual.ImageStim(
     win=win,
-    name='breakimg', 
+    name='breaking', 
     image='breakfile.jpg', mask=None,
     ori=0.0, pos=(0, 0), size=None,
     color=[1,1,1], colorSpace='rgb', opacity=None,
@@ -324,7 +331,7 @@ for thisStdRT_trial in stdRT_trials:
     _key_resp_stdRT_allKeys = []
     text.setText(stimulus)
     # keep track of which components have finished
-    stdRT_loopComponents = [key_resp_stdRT, text]
+    stdRT_loopComponents = [key_resp_stdRT, text, RT_trial_instructions]
     for thisComponent in stdRT_loopComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -378,6 +385,15 @@ for thisStdRT_trial in stdRT_trials:
             win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
             text.setAutoDraw(True)
         
+        # *RT_trial_instructions* updates
+        if RT_trial_instructions.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            RT_trial_instructions.frameNStart = frameN  # exact frame index
+            RT_trial_instructions.tStart = t  # local t and not account for scr refresh
+            RT_trial_instructions.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(RT_trial_instructions, 'tStartRefresh')  # time at next scr refresh
+            RT_trial_instructions.setAutoDraw(True)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -409,6 +425,8 @@ for thisStdRT_trial in stdRT_trials:
     stdRT_trials.addData('key_resp_stdRT.stopped', key_resp_stdRT.tStopRefresh)
     stdRT_trials.addData('text.started', text.tStartRefresh)
     stdRT_trials.addData('text.stopped', text.tStopRefresh)
+    stdRT_trials.addData('RT_trial_instructions.started', RT_trial_instructions.tStartRefresh)
+    stdRT_trials.addData('RT_trial_instructions.stopped', RT_trial_instructions.tStopRefresh)
     # the Routine "stdRT_loop" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
@@ -1028,7 +1046,7 @@ for thisExperiment_trial in experiment_trials:
         continue6.rt = []
         _continue6_allKeys = []
         # keep track of which components have finished
-        breakblockComponents = [breakimg, continue6]
+        breakblockComponents = [breaking, continue6]
         for thisComponent in breakblockComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1051,14 +1069,14 @@ for thisExperiment_trial in experiment_trials:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *breakimg* updates
-            if breakimg.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # *breaking* updates
+            if breaking.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                breakimg.frameNStart = frameN  # exact frame index
-                breakimg.tStart = t  # local t and not account for scr refresh
-                breakimg.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(breakimg, 'tStartRefresh')  # time at next scr refresh
-                breakimg.setAutoDraw(True)
+                breaking.frameNStart = frameN  # exact frame index
+                breaking.tStart = t  # local t and not account for scr refresh
+                breaking.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(breaking, 'tStartRefresh')  # time at next scr refresh
+                breaking.setAutoDraw(True)
             
             # *continue6* updates
             waitOnFlip = False
@@ -1103,8 +1121,8 @@ for thisExperiment_trial in experiment_trials:
         for thisComponent in breakblockComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        breaktrials.addData('breakimg.started', breakimg.tStartRefresh)
-        breaktrials.addData('breakimg.stopped', breakimg.tStopRefresh)
+        breaktrials.addData('breaking.started', breaking.tStartRefresh)
+        breaktrials.addData('breaking.stopped', breaking.tStopRefresh)
         # check responses
         if continue6.keys in ['', [], None]:  # No response was made
             continue6.keys = None
